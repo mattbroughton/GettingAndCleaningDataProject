@@ -44,6 +44,9 @@ extractMeanAndStdev<-function(nameDoc){
   #Change "MeanFreq" to "MeanFrequency"
   uncleanNames[grep("MeanFreq",uncleanNames)]<-gsub("MeanFreq","MeanFrequency",uncleanNames[grep("MeanFreq",uncleanNames)])
   
+  #Change "Gyro" to "AngularVelocity"
+  uncleanNames[grep("Gyro",uncleanNames)]<-gsub("Gyro","AngularVelocity",uncleanNames[grep("Gyro",uncleanNames)])
+  
   cleanNames<-as.character(uncleanNames)
   #Create the output data frame
   dataFrame<-data.frame(desiredIndices,cleanNames)
