@@ -18,7 +18,7 @@ To run successfully, the user must have the reshape2 R library installed. The sc
 
 -- **readActivity.R** This script performs step 2 listed above. 
 
-This directory also contains the following files, all of which are needed by run_analysis.R.
+To run successfully, the directory that contains all the R scripts must have the following files in it as well:
   
 1. features.txt
 2. features_info.txt
